@@ -1,0 +1,285 @@
+<html>
+
+<head>
+    <title>Simran Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
+            color: #fff7f7;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(30, 30, 30, 0.9);
+            color: #ffffff;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-bottom: 2px solid #b0bec5;
+        }
+
+        header h2 {
+            font-size: 24px;
+            Dasari N. S. font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            color: #ffffff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 2px;
+            background: #90a4ae;
+            left: 0;
+            bottom: -5px;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        nav a:hover {
+            color: #78909c;
+        }
+
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 80px;
+        }
+
+        .content {
+            display: flex;
+            Dasari N. S. width: 100%;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+
+        .text {
+            width: 50%;
+        }
+
+        .text h1 {
+            font-size: 50px;
+            color: #222;
+        }
+
+        .line {
+            width: 90px;
+            height: 5px;
+            background: white;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .text p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: white;
+        }
+
+        .sub {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .sub div {
+            width: 50%;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            Dasari N. S. color: #333;
+        }
+
+        .sub p {
+            color: #222;
+        }
+
+        .image {
+            width: 40%;
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+
+        .image img:hover {
+            transform: scale(1.05);
+        }
+
+        .section:nth-child(even) .content {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+            }
+
+            .text,
+            .image {
+                width: 100%;
+            }
+
+            .sub {
+                flex-direction: column;
+                Dasari N. S.
+            }
+
+            .text h1 {
+                font-size: 30px;
+            }
+
+            .section {
+                padding: 100px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>Simran Shaikh</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section id="home" class="section">
+        <div class="content">
+            <div class="text">
+                <h1>My Portfolio</h1>
+                <div class="line"></div>
+                <p>I am <b></b></p>Simran shaikh
+                <p>Student | computer Technology</p>
+            </div>
+            <div class="image">
+                <img src="mih.jpeg" height="650px" width="500px" style="border-radius:
+40px;">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="section">
+        <div class="content">
+            <div class="text">
+                <h1>About Me</h1>
+                Simran
+                <div class="line"></div>
+                <p>I am passionate diploma student with interst in Web Design and Programming.
+                    I love learning new technologies and improving my practical skills.
+                </p>
+                <div class="sub">
+                    <div>
+                        <h3>Learning</h3>
+                        <p>I am currently pursuing my diploma
+                         and focusing on building strong technical knowledge with practical experience.</p>
+                    </div>
+                    <div>
+                        <h3>Skills</h3>
+                        <p>HTML, CSS, Java, C Programming.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="education.png">
+            </div>
+        </div>
+    </section>
+    <section id="skills" class="section">
+        <div class="content">
+            <div class="text">
+                <h1>Skills</h1>
+                <div class="line"></div>
+                <p>Technical and professional skills.</p>
+                <div class="sub">
+                    <div>
+                        <h3>Technical</h3>
+                        <p>HTML, CSS, Java, C</p>
+                    </div>
+                    <div>
+                        <h3>Other</h3>
+                        <p>Communication, MS Office</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="skill.png">
+            </div>
+            
+        </div>
+    </section>
+    <section id="projects" class="section">
+        <div class="content">
+            <div class="text">
+                <h1>Projects</h1>
+                <div class="line"></div>
+                <p>Some of my projects.</p>
+                <div class="sub">
+                    <div>
+                        <h3>IoT Project</h3>
+                        <p>Water Quality Monitoring System.</p>
+                    </div>
+                    <div>
+                        <h3>Web Project</h3>
+                        <p>Online TC & Bonafide System.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image">
+                <img src="Project.png">
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="section">
+        <div class="content">
+            <div class="text">
+                <h1>Contact</h1>
+                <div class="line"></div>
+                <p>8956353738</p>
+                <p>simranshaikh2904@gmail.com</p>
+            </div>
+            <div class="image">
+                <img src="contact.png">
+            </div>
+        </div>
+        Simran.J.Shaikh
+    </section>
+</body>
+
+</html>
